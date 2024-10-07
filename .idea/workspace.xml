@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e0e927b-c883-4c70-ba7e-4f3db61104e7" name="Changes" comment="påbörjat projekt">
-      <change afterPath="$PROJECT_DIR$/src/tamagotchi.java" afterDir="false" />
+    <list default="true" id="3e0e927b-c883-4c70-ba7e-4f3db61104e7" name="Changes" comment="skapat alla metoder pch gjort klart en del av de">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tamagotchi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tamagotchi.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +61,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1727863974973</updated>
-      <workItem from="1727864585025" duration="934000" />
+      <workItem from="1727864585025" duration="3243000" />
     </task>
     <task id="LOCAL−00001" summary="påbörjat projekt">
       <option name="closed" value="true" />
@@ -70,7 +70,14 @@
       <option name="presentableId" value="LOCAL−00001" />
       <updated>1727864111960</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL−00002" summary="skapat alla metoder pch gjort klart en del av de">
+      <option name="closed" value="true" />
+      <created>1727866462055</created>
+      <option name="number" value="LOCAL−00002" />
+      <option name="presentableId" value="LOCAL−00002" />
+      <updated>1727866462055</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -78,6 +85,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="påbörjat projekt" />
-    <option name="LAST_COMMIT_MESSAGE" value="påbörjat projekt" />
+    <MESSAGE value="skapat alla metoder pch gjort klart en del av de" />
+    <option name="LAST_COMMIT_MESSAGE" value="skapat alla metoder pch gjort klart en del av de" />
   </component>
 </project>

@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class tamagotchi {
     private int hunger = 0;
     private int boredom = 0;
-    private ArrayList<String> words;
+    private ArrayList<String> words = new ArrayList<>();
     private boolean isAlive;
     public String name;
     private Random generator = new Random();
@@ -26,6 +26,12 @@ public class tamagotchi {
     }
 
     public void speak(){
+        if (words.isEmpty()){
+            System.out.println("He cannot speak yet!");
+        }
+        else {
+            System.out.println(words.get(generator.nextInt(words.size())));
+        }
 
     }
 
@@ -34,7 +40,8 @@ public class tamagotchi {
     }
 
     public void printStats(){
-
+        System.out.println("Hunger: " + hunger);
+        System.out.println("Boredom: " + boredom);
     }
 
     public boolean getAlive(){
