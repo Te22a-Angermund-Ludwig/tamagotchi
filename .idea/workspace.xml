@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e0e927b-c883-4c70-ba7e-4f3db61104e7" name="Changes" comment="Så gott som klar med spel-loopen">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tamagotchi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tamagotchi.java" afterDir="false" />
-    </list>
+    <list default="true" id="3e0e927b-c883-4c70-ba7e-4f3db61104e7" name="Changes" comment="jag tror att jag är klar" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,7 +71,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1727863974973</updated>
-      <workItem from="1727864585025" duration="10316000" />
+      <workItem from="1727864585025" duration="10807000" />
     </task>
     <task id="LOCAL−00001" summary="påbörjat projekt">
       <option name="closed" value="true" />
@@ -105,7 +101,14 @@
       <option name="presentableId" value="LOCAL−00004" />
       <updated>1728470487806</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL−00005" summary="jag tror att jag är klar">
+      <option name="closed" value="true" />
+      <created>1728472264819</created>
+      <option name="number" value="LOCAL−00005" />
+      <option name="presentableId" value="LOCAL−00005" />
+      <updated>1728472264819</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,6 +119,7 @@
     <MESSAGE value="skapat alla metoder pch gjort klart en del av de" />
     <MESSAGE value="Klar med metoderna" />
     <MESSAGE value="Så gott som klar med spel-loopen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Så gott som klar med spel-loopen" />
+    <MESSAGE value="jag tror att jag är klar" />
+    <option name="LAST_COMMIT_MESSAGE" value="jag tror att jag är klar" />
   </component>
 </project>

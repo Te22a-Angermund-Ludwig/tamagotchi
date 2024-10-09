@@ -36,7 +36,7 @@ public class Main {
                     nummer1.gambleLife();
                     return;
                 default:
-                    //break;
+                    break;
 
             }
 
