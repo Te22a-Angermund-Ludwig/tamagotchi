@@ -6,18 +6,19 @@ public class Main {
 
         System.out.println("Vad vill du att din Tamagotchi ska heta?");
         System.out.print("Namn: ");
-        String namn = input.next();
+        String namn = input.nextLine();
         tamagotchi nummer1 = new tamagotchi();
         nummer1.newTamagotchi(namn);
 
         while(true) {
-            System.out.print("Vad vill du göra med "+nummer1.name+"?");
+            System.out.println("Vad vill du göra med "+nummer1.name+"?");
             System.out.println("1. Mata");
             System.out.println("2. lära ord");
             System.out.println("3. prata med "+nummer1.name);
             System.out.println("4. visa stats");
             System.out.println("5. Avsluta");
-            switch(input.next()) {
+            String ans = input.nextLine();
+            switch(ans) {
                 case "1":
                     nummer1.feed();
                     break;
@@ -35,10 +36,14 @@ public class Main {
                     nummer1.gambleLife();
                     return;
                 default:
-                    break;
+                    //break;
 
             }
+
             nummer1.Tick();
+            if (!nummer1.getAlive()){
+                return;
+            }
         }
 
 

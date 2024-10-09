@@ -6,7 +6,7 @@ public class tamagotchi {
     private int hunger = 0;
     private int boredom = 0;
     private ArrayList<String> words = new ArrayList<>();
-    private boolean isAlive;
+    private boolean isAlive = true;
     public String name;
     private Random generator = new Random();
     Scanner input = new Scanner(System.in);
@@ -14,7 +14,17 @@ public class tamagotchi {
     public void Tick(){
         hunger++;
         boredom++;
-        if (hunger > 10 || boredom > 10){
+        if (hunger >= 10 || boredom >= 10){
+            if (boredom>=10)
+            {
+                System.out.println(name+" blev så uttråkad att den dog!");
+            }
+            if (hunger>=10) {
+                System.out.println(name+" svälte till döds!");
+            }
+            if (hunger >=10 && boredom>=10){
+                System.out.println("Du kan verkligen inte ta hand om "+name);
+            }
             isAlive = false;
         }
     }
@@ -68,7 +78,7 @@ public class tamagotchi {
 
     public void gambleLife(){
         Random random = new Random();
-        int gamble = random.nextInt(1,2);
+        int gamble = random.nextInt(1,3);
         System.out.println("...");
         if (gamble == 1){
             System.out.println(name+"Klarade sig själv ett bra tag tills han dog utav ålder!");
