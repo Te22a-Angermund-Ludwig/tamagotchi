@@ -9,6 +9,7 @@ public class tamagotchi {
     private boolean isAlive;
     public String name;
     private Random generator = new Random();
+    Scanner input = new Scanner(System.in);
 
     public void Tick(){
         hunger++;
@@ -19,10 +20,11 @@ public class tamagotchi {
     }
 
     public void feed(){
-        hunger--;
+        hunger = hunger - 2;
         if (hunger <= 0){
             hunger = 0;
         }
+        System.out.println("Du matar "+name+ " och den är nu inte lika hungrig");
     }
 
     public void speak(){
@@ -32,14 +34,19 @@ public class tamagotchi {
         else {
             System.out.println(words.get(generator.nextInt(words.size())));
         }
-
+        reduceBoredome();
     }
 
-    public void teach(String word){
+    public void teach(){
+        System.out.println("Vilket ord vill du att din tamagotchi ska kunna?");
+        System.out.print("Ord: ");
+        String word = input.next();
         words.add(word);
+        reduceBoredome();
     }
 
     public void printStats(){
+        System.out.println(name+ "'s stats");
         System.out.println("Hunger: " + hunger);
         System.out.println("Boredom: " + boredom);
     }
@@ -49,9 +56,26 @@ public class tamagotchi {
     }
 
     private void reduceBoredome(){
-        boredom--;
+        boredom = boredom - 2;
         if (boredom <= 0){
             boredom = 0;
         }
     }
+
+    public void newTamagotchi(String incomingName){
+        name = incomingName;
+    }
+
+    public void gambleLife(){
+        Random random = new Random();
+        int gamble = random.nextInt(1,2);
+        System.out.println("...");
+        if (gamble == 1){
+            System.out.println(name+"Klarade sig själv ett bra tag tills han dog utav ålder!");
+        }
+        else if (gamble == 2){
+            System.out.println(name+"Klarade sig inte själv och dog strax efter du lämnade den...");
+        }
+    }
+
 }
